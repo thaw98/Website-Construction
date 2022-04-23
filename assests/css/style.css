@@ -1,0 +1,29 @@
+/* Color root */
+:root {
+  --color-one: #14283d;
+  --color-two: #2e499e;
+}
+.color-one {
+  background-color: var(--color-two);
+  color: #fff;
+}
+.color-one:hover {
+  background-color: var(--color-one);
+  color: #fff;
+}
+.wave {
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+}
+.underline::after {
+  content: "";
+  background-color: var(--color-two);
+  display: block;
+  width: 15%;
+  height: 2px;
+  margin: 15px 0px;
+}
+.h1-color {
+  color: var(--color-two);
+}
